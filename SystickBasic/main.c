@@ -9,7 +9,7 @@ int main()
 	PTB->PDDR |= 0x0400000;			// Set PTB21 as output
 	
 	//Configure Systick
-	SysTick->LOAD = 10000000 - 1; // System clock is 50MHz and for 200ms  
+	SysTick->LOAD = 8388000 - 1; // System clock is 41.94MHz and for 200ms  
 	SysTick->CTRL = 5;  //Enable systick, no interrupt, use system clock.
 	
 	while(1)
